@@ -46,7 +46,6 @@ public class ProgramaPrincipal {
             }
         }
             while (escolhaPrincipal != 0);
-
         }
 
     public static void visualizarColaborador(){
@@ -55,10 +54,7 @@ public class ProgramaPrincipal {
         System.out.println("Digite o nome do colaborador: ");
         String nomeColaborador = s.next();
         try{
-        colaboradores.stream().filter(value -> value.getNome().equalsIgnoreCase(nomeColaborador)).forEach(value -> {
-            assert false;
-            colaborador.set(value);
-        });
+        colaboradores.stream().filter(value -> value.getNome().equalsIgnoreCase(nomeColaborador)).forEach(colaborador::set);
 
             System.out.println("Colaborador encontrado");
         } catch (NullPointerException e){
