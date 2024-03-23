@@ -59,8 +59,8 @@ public abstract class Colaborador {
     }
 
     public void setIdade(int idade) {
-        if(idade < 0) {
-            throw new IllegalArgumentException("Idade não pode ser negativa");}
+        if(idade < 0 || idade >= 18) {
+            throw new IllegalArgumentException("Idade não pode ser negativa e o colaborador não pode ser de menor");}
         this.idade = idade;
     }
 
