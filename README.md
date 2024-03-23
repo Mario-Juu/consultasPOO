@@ -17,8 +17,12 @@ Projeto de Programação Orientada a Objetos em Java, onde se utilizamos de clas
 3. Dê run na aplicação.
 4. Siga o passo a passo do projeto.
 
-## Modelos
+## Diagramas
+### Diagrama de Classes
+<img src="imagem_2024-03-23_192322809.png">
 
+### Diagrama de Fluxo
+<img src="imagem_2024-03-23_192435762.png">
 
 
  
