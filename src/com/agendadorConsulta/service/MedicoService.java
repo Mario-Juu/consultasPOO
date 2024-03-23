@@ -9,6 +9,7 @@ public class MedicoService {
 
     public static Medico criarMedico(){
         Medico medico = new Medico();
+        try{
         Scanner s = new Scanner(System.in);
         System.out.println("Digite o nome do médico: ");
         medico.setNome(s.next());
@@ -24,6 +25,11 @@ public class MedicoService {
         medico.setCrm(s.next());
         System.out.println("Digite a clínica do médico: ");
         medico.setClinica(s.next());
+        } catch (IllegalArgumentException e){
+            System.out.println("Erro ao criar o médico: " + e.getMessage());
+            System.out.println("Tente novamente.");
+            return null;
+        }
 
         System.out.println("Médico criado com sucesso!");
         return medico;

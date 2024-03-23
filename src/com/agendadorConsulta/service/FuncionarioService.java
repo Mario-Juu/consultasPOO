@@ -9,6 +9,7 @@ public class FuncionarioService {
     public static Funcionario criarFuncionario(){
         Funcionario funcionario = new Funcionario();
         Scanner s = new Scanner(System.in);
+        try{
         System.out.println("Digite o nome do funcionário: ");
         funcionario.setNome(s.next());
         System.out.println("Digite o horário do funcionário: ");
@@ -21,6 +22,11 @@ public class FuncionarioService {
         funcionario.setCargo(s.next());
         System.out.println("Digite o sindicato do funcionário: ");
         funcionario.setSindicato(s.next());
+        } catch (IllegalArgumentException e){
+            System.out.println("Erro ao criar o funcionário: " + e.getMessage());
+            System.out.println("Tente novamente.");
+            return null;
+        }
 
         System.out.println("Funcionário criado com sucesso!");
         return funcionario;
