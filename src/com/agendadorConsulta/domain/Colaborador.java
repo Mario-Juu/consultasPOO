@@ -12,10 +12,10 @@ import java.util.stream.Stream;
  * @author Lukcas
  */
 public abstract class Colaborador {
-    private String nome;
-    private String horario;
-    private int idade;
-    private int anoEntrada;
+    protected String nome;
+    protected String horario;
+    protected int idade;
+    protected int anoEntrada;
 
     private ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
     
