@@ -19,7 +19,7 @@ Projeto de Programação Orientada a Objetos em Java, onde se utilizamos de clas
 
 ## Diagramas
 ### Diagrama de Classes
-<img src="imagem_2024-03-23_192322809.png">
+<img src="image.jpg">
 <img src="imagem_2024-03-23_200202762.png">
 
 ### Diagrama de Fluxo
