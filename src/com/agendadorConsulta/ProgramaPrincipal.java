@@ -55,20 +55,21 @@ public class ProgramaPrincipal {
         String nomeColaborador = s.next();
 
         colaboradores.stream().filter(value -> value.getNome().equalsIgnoreCase(nomeColaborador)).forEach(colaborador::set);
-        if(colaborador.get() != null)
+        if(colaborador.get() != null){
             System.out.println("Colaborador encontrado");
-        else {
-            System.out.println("Colaborador não encontrado");
-            return;
+            System.out.println("Deseja visualizar os pacientes do colaborador? (1 - Sim / 2 - Não)");
+            int visualizarPacientes = s.nextInt();
+            if (visualizarPacientes == 1){
+                RelatorioServiceImpl relatorio = new RelatorioServiceImpl(colaborador.get());
+                relatorio.gerarRelatorio();
+                return;
+            }
         }
+        System.out.println("Colaborador não encontrado");
 
 
-        System.out.println("Deseja visualizar os pacientes do colaborador? (1 - Sim / 2 - Não)");
-        int visualizarPacientes = s.nextInt();
-        if (visualizarPacientes == 1){
-            RelatorioServiceImpl relatorio = new RelatorioServiceImpl(colaborador.get());
-            relatorio.gerarRelatorio();
-        }
+
+
 
     }
 
@@ -76,9 +77,10 @@ public class ProgramaPrincipal {
 
         System.out.println("\nCOLABORADOR");
 
-        System.out.println("Escolha abaixo qual tipo de colaborador será cadastrado" +
-                "\n1 - Funcionário" +
-                "\n2 - Médico");
+        System.out.println("""
+                Escolha abaixo qual tipo de colaborador será cadastrado
+                1 - Funcionário
+                2 - Médico""");
         System.out.print("Digite sua opção: ");
         int escolhaColaborador = s.nextInt();
 
