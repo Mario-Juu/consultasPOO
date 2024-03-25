@@ -5,7 +5,7 @@ Projeto de Programação Orientada a Objetos em Java, onde se utilizamos de clas
 ## Tecnologias
 - Java
 - Batch
-- Regex
+- Java IO
 
 
 ## Como usar
