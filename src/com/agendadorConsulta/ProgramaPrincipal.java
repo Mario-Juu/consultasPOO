@@ -53,14 +53,15 @@ public class ProgramaPrincipal {
         AtomicReference<Colaborador> colaborador = new AtomicReference<>();
         System.out.println("Digite o nome do colaborador: ");
         String nomeColaborador = s.next();
-        try{
-        colaboradores.stream().filter(value -> value.getNome().equalsIgnoreCase(nomeColaborador)).forEach(colaborador::set);
 
+        colaboradores.stream().filter(value -> value.getNome().equalsIgnoreCase(nomeColaborador)).forEach(colaborador::set);
+        if(colaborador.get() != null)
             System.out.println("Colaborador encontrado");
-        } catch (NullPointerException e){
+        else {
             System.out.println("Colaborador não encontrado");
             return;
         }
+
 
         System.out.println("Deseja visualizar os pacientes do colaborador? (1 - Sim / 2 - Não)");
         int visualizarPacientes = s.nextInt();
