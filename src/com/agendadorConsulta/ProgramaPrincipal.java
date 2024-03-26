@@ -64,6 +64,7 @@ public class ProgramaPrincipal {
                 relatorio.gerarRelatorio();
                 return;
             }
+            return;
         }
         System.out.println("Colaborador não encontrado");
 
