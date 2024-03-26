@@ -1,11 +1,11 @@
 ###  Projeto Agendador de Consultas em POO
 ## Descrição
-Projeto de Programação Orientada a Objetos em Java, onde se utilizamos de classes classes utilitárias nativas da linguagem, tecnologias de batch e principalmente o paradigma da orientação a objetos. O projeto é um sistema simples para o gerenciamento de um hospital, onde você pode cadastrar e visualizar colaboradores. Os colaboradores possuem pacientes que estão vinculados ao mesmo, podendo então gerar um relatório com todas essas informações, tanto no console quanto na criação de um arquivo de texto para armazenamento dos dados. 
+Projeto de Programação Orientada a Objetos em Java, onde utilizamos classes utilitárias nativas da linguagem, tecnologias de batch e principalmente o paradigma da orientação a objetos. O projeto é um sistema simples para o gerenciamento de um hospital, onde você pode cadastrar e visualizar colaboradores. Os colaboradores possuem pacientes que estão vinculados ao mesmo, podendo então gerar um relatório com todas essas informações, tanto no console quanto na criação de um arquivo de texto para armazenamento dos dados. 
 
 ## Tecnologias
 - Java
 - Batch
-- Regex
+- Java IO
 
 
 ## Como usar
@@ -19,7 +19,7 @@ Projeto de Programação Orientada a Objetos em Java, onde se utilizamos de clas
 
 ## Diagramas
 ### Diagrama de Classes
-<img src="imagem_2024-03-23_192322809.png">
+<img src="image.png">
 <img src="imagem_2024-03-23_200202762.png">
 
 ### Diagrama de Fluxo
